@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Box Model</title>
     <style>
-        body{
-            background-color: red;
+        body, html{
+            border: solid black;
+            padding: 0;
+            margin: 0;
+            background-color: green;
+            height: 100%;
+        }
+        .box{
+            border: solid black;
+            background-color: yellow;
+            width: 50%;
+            height: 50%;
+            padding: 30px;
+            padding: 30px 20px;
+            padding: 20px 10px 5px 2px;
+            margin: 30px;
+            margin: 30px 20px;
+            margin: 20px 10px 5px 2px;
+        }
+        .inside-box{
+            border: 5px dashed red;
+            width: 50%;
+            height: 50%;
         }
     </style>
 </head>
 <body>
-    <h1>Home Title</h1>
+    <div class="box">
+        <div class="inside-box"></div>
+    </div>
 </body>
 </html>
