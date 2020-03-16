@@ -4,6 +4,9 @@
     <title>HTML Cheat Sheet</title>
   </head>
   <body>
+    <a href="blog.html">Go to Blog</a>
+    <hr />
+
     <!-- Headings -->
     <h1>Heading One</h1>
     <h2>Heading Two</h2>
@@ -25,5 +28,122 @@
       unde animi? Quod a quis aliquam, error officia accusantium perferendis!
       Similique quae quibusdam voluptatibus dolore.
     </p>
+
+    <!-- Lists -->
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ul>
+
+    <ol>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sean Lee</td>
+          <td>glowing713@naver.com</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>James Potter</td>
+          <td>james@gmail.com</td>
+          <td>475</td>
+        </tr>
+        <tr>
+          <td>Harry Potter</td>
+          <td>harry@yahoo.com</td>
+          <td>37</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Forms -->
+    <form action="process.php" method="POST">
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" placeholder="Enter first name" />
+      </div>
+      <br />
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" name="age" value="30" />
+      </div>
+      <br />
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="submit" />
+    </form>
+
+    <!-- Button -->
+    <button>Click Me</button>
+    <br />
+    <!-- Image -->
+    <a href="images/CharlieBrown1.jpg" target="_blank">
+      <img
+        src="images/CharlieBrown1.jpg"
+        alt="Charlie Brown"
+        width="250"
+        height="300"
+      />
+    </a>
+
+    <!-- Quotations -->
+    <blockquote cite="http://google.com">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      fugiat magni quos laborum sapiente, soluta facere ullam temporibus quaerat
+      earum nihil quae perspiciatis enim delectus similique laboriosam ex
+      nostrum! Cupiditate.
+    </blockquote>
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+
+    <p><cite>HTML crash course</cite> by Brad Traversy</p>
+
+    <div style="margin-top:500px"></div>
   </body>
 </html>
