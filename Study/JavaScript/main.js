@@ -1,3 +1,15 @@
-console.log("Hello world!!!");
-console.error("This is a error");
-console.warn("This is a error");
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  hobbies: ["Music", "Movies", "Sports"],
+  address: {
+    street: "50 main st",
+    city: "Boston",
+    state: "MA"
+  }
+};
+
+person.email = "john@gmail.com";
+
+console.log(person);
