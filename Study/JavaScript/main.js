@@ -1,8 +1,9 @@
-// Single element
-console.log(document.getElementById("my-form"));
-console.log(document.querySelector("label"));
+const btn = document.querySelector(".btn");
 
-// Multiple element
-console.log(document.querySelectorAll(".item"));
-console.log(document.getElementsByClassName("item"));
-console.log(document.getElementsByTagName("h1"));
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  document.querySelector("#my-form").style.background = "#ccc";
+  document.querySelector("body").classList.add("bg-dark");
+  document.querySelector(".items").lastElementChild.innerHTML =
+    "<h1>Hello</h1>";
+});
