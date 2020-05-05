@@ -1,11 +1,18 @@
-const title = document.getElementById("title");
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
 
 function handleClick() {
-  title.style.color = "blue";
-
-  setTimeout(() => {
-    title.style.color = "white";
-  }, 100);
+  // const currentClass = title.className;
+  // if (!title.classList.contains(CLICKED_CLASS)) {
+  //   title.classList.add(CLICKED_CLASS);
+  // } else {
+  //   title.classList.remove(CLICKED_CLASS);
+  // }
+  title.classList.toggle(CLICKED_CLASS);
 }
 
-title.addEventListener("click", handleClick);
+function init() {
+  title.addEventListener("click", handleClick);
+}
+init();
